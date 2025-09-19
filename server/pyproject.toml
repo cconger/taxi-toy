@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taxi-server"
+version = "0.1.0"
+description = "Backend services for NYC taxi analytics"
+authors = [{ name = "Taxi Toy" }]
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.34.0",
+  "duckdb>=1.1.0",
+  "pydantic>=2.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["app"]

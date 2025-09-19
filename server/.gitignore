@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.env
+.venv/
+.env.local
+.pytest_cache/
+# Virtual environments
+venv/
+ENV/
+
+# Editor directories
+.vscode/
+.idea/
+
+# Coverage / testing
+htmlcov/
+.coverage*
+.mypy_cache/
+
+# Pyproject metadata
+pip-wheel-metadata/
+
+# Local caches
+.cache/
